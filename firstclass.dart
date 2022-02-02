@@ -17,5 +17,4 @@ void main() {
   String name = "Destiny";
   bool is_light_on = true;
 
-  print(age);
 }
