@@ -1,4 +1,3 @@
-void main() {
   /*
   WEEK 2 ASSESSMENT
 
@@ -38,4 +37,3 @@ My Github username: destinyjob
 If you have any questions, please ask. But digest the assignment properly before asking.
 
    */
-}

@@ -1,6 +1,4 @@
-void main() {
-  /*LAB
-CREATE A PIZZA ORDER PROGRAM. Given the following:
+/*LAB CREATE A PIZZA ORDER PROGRAM. Given the following:
 SIZE: 1. Small (N500), 2. Medium (N650), 3. Large (N1000)
 TYPE: 1. Veggie (N300), 2. Pepperoni (N350), 3. Meat Pizza (N330), 4. Margherita Pizza (N300), 5. BBQ Chicken Pizza (N370), 6. Hawaiian Pizza (N400), 7. Buffalo Pizza (N350)
 TOPPINGS: 1. Mushroom (N100), 2. Onions (N100), 3. Green pepper (N100), 4. Extra cheese (N100), 5. Pepperoni (N100), 6. Sausage (N100), 7. Pineapple (N100), 8. Ham (N100)
@@ -41,6 +39,4 @@ Then the program should display a receipt of the customers order like this:
 
         Total cost of your order: N980
 
-Thank you for placing your order Deebug. Your order will be delivered to No 9 Akpakpava road in 15 minutes time.
- */
-}
+Thank you for placing your order Deebug. Your order will be delivered to No 9 Akpakpava road in 15 minutes time*/

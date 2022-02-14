@@ -1,5 +1,3 @@
-import 'dart:math';
-
 //Global declaration
 int a = 5;
 main() {
