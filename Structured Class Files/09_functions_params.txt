@@ -1,0 +1,85 @@
+Dart functions allow positional parameters and optional parameters (named parameters and optional positional parameters) or a combination of all of them.
+
+Positional parameters are simply what we’ve seen so far:
+void gradeFunction(String studentName, int score) {
+// instruction to be executed
+}
+
+And then to call this function, you must pass in a String and an int, in this order:
+gradeFunction(‘Musa’, 55);
+
+
+Now, lets look at named paramters.
+__________
+NAMED PARAMETERS
+Dart supports named parameters. Named means that when you call a function, you attach
+the argument to a label. This example calls a function with two named parameters:
+debugger(message: 'A bug!', lineNum: 44);
+
+Named parameters are written a bit differently. You wrap any named parameters in curly braces { }.
+
+This line defines a function with named parameters:
+void debugger({String message, int lineNum}) {
+	//code block to be executed
+}
+____________
+POSITIONAL OPTIONAL PARAMETERS
+Finally, you can pass positional parameters that are optional, using [ ] :
+
+int addSomeNums(int x, int y, [int z]) {
+  int sum = x + y;
+  if (z != null) {
+    sum += z;
+  }else{
+    print("the value of z is: $z");
+  }
+  print(sum);
+}
+
+//calling the function
+addSomeNums(5, 4);		//The third parameter is optional, so you don’t have to pass in anything.
+addSomeNums(5, 4, 3);		//You can pass in a third argument, since you’ve defined an optional parameter.
+
+________
+DEFAULT PARAMETER VALUES
+addSomeNums(int x, int y, [int z = 5]) => x + y + z;
+
+//You can define default values for parameters with the = operator in the function signature:
+
+
+EXERCISE
+void main(){
+	String returnedSentence = sentence(age: 56, height: 7, name: 'Ghost', salary: 343334.4343);
+	print(“first sentence: ” + returnedSentence);
+	
+	printProfile(name: 'James', age: 67);
+	printProfile(name: “Bobo”);
+	
+	if(checkAge(16)){
+		 print("Page has displayed");
+	}else{
+		print("Page has not displayed");
+	}
+}
+
+// This is a function with named parameters. The arguments of this function can be passed in any particular order.
+// Also, it is important to note that named parameters are automatically optional, meaning that they do not have to be passed.
+String sentence({String name, int age, double salary, double height}){
+	String mySentence = 'Your name is $name, you are $age years old.\nYour salary is $salary and you are $height feet tall\n';
+	return mySentence;
+}
+// Here we assign a default value to the age parameter
+printProfile({String name, int age = 6}){
+	print('Name: $name, age: $age');
+}
+// A function with a named parameter and a positional parameter
+// NOTE: Positional parameters must always come before the named parameters
+bool checkAge(int age, {String name = 'Matthew'}){
+	if(age >= 18){
+		print('\n$name can enter');
+		return true;
+	}else{
+		print('\n$name cannot enter');
+		return false;
+	}
+}

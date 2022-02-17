@@ -1,0 +1,71 @@
+>> ACTIVITY 9
+Write a program that can collect a students' exam score and then display the corresponding grade.
+
+For example
+If the user input is:
+-greater than 69 but less than and equal to 100, print to the console, "you scored an A"
+-greater than 59 but less than 70, print to the console, "you scored a B"
+-greater than and equal to 50 but less than 60, print to the console, "you scored a C"
+-greater than 44 but less than 50, print to the console, "you scored a D"
+-else, print to the console, "you scored an F"
+
+E.G
+What's the total you scored?
+INPUT: 72
+OUTPUT: you scored an A
+
+What's the total you scored?
+INPUT: 52
+OUTPUT: you scored an C
+
+
+
+>> ACTIVITY 10
+Create a CGPA calculator program that the user can input his CGPA point as a decimal and the program will display the students' class of degree.
+
+4.50-5.00 >> 1st class
+3.50-4.49 >> 2nd class upper
+2.40-3.49 >> 2nd class lower
+1.50-2.39 >> 3rd class
+1.00-1.49 >> Pass
+Less than 1.00 >> Fail
+
+For example:
+INPUT: 4.2
+OUTPUT: 2nd class upper
+
+
+
+>> ACTIVITY 11
+Write a code to generate the 2’s Multiplication table in this structure
+2*1 = 2
+2*2 = 4
+.
+.
+.
+2*10 = 10;
+
+
+
+>> ACTIVITY 12
+Define a function “greet” that prints “Hello `name`, welcome to Deebug”. Where name is the argument that was passed as a parameter to the greet function.
+
+
+>> ACTIVITY 13
+Create a function that generates a random number in the range (0-10). And then your program should check if the number you guessed is higher, lower or if the number matches the random number that was generated
+Once you are done with the function definition, call the function and pass your guessed number as an argument to the function and then run your program
+
+EXAMPLE
+Assuming the guessGame function has been defined already and i call my function by typing
+guessGame(4);
+
+If the random number that was generated when this program ran was 5, it should print to the console: Your guess is too low
+if the random number that was generated when the program ran was 3, it should print to the console: Your guess is too high
+if the random number that was generated when the program ran was 5, it should print: Congrats! Your guess is correct!
+
+_________________________________________
+NB.
+1. The name of the file should match the name of the activity you are answering
+2. Ensure you comment each question in the particular file you will be answering it's corresponding activity
+
+If you have any questions, please ask. But digest the assignment properly before asking.

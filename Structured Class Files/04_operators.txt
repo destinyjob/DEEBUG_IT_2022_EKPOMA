@@ -1,0 +1,20 @@
+//AUTHOR: Deebug Institute
+
+PRECEDENCE LEVEL
+
+PEMDAS
+It stands for Parentheses, Exponents, Multiplication/Division, Addition/Subtraction.
+
+void main(){
+   double grade = 10-9/2*(10+12)/3*8;
+   print(grade);
+
+   double calculation = (8-(5*3))-(6+10)+(8/2);
+   print(calculation);
+}
+
+
+
+THE PREFIX OPERATOR (--variableName): The operator acts on the value of the variable first and then uses the value.
+
+THE POSTFIX OPERATOR (variableName++) : The value of the variable is used first, before the operator acts on the variable.

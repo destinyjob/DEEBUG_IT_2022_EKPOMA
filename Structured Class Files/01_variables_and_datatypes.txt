@@ -1,0 +1,26 @@
+//AUTHOR: Deebug Institute
+
+DART VARIABLE NAMING RULES
+1. Names must begin with a letter and can also begin with $ and _
+2. Names can contain letters, digits, underscores, and dollar signs. All other special characters are not allowed.
+3. Variable names can’t contain spaces.
+4. Every language has reserved keywords that cannot be used in variable names, and dart is not exempt from this rule. For example; int is a keyword which means Integer already to the computer. You cannot declare a variable and specify its name to be int. That simply would not work.
+
+
+DART DATATYPES
+int:    10, 32, 120, etc.
+double:     3.142, 40.9, 2.0, etc.
+bool:    true, false.
+String:     ‘Deebug’, “Hi friend”, etc.
+List<datatype>:      List<String> name = [“Duke”,”John”,”Destiny”, “Deebug”];
+Map<key,value>:      Map<String,String> = {“username” : “David”, “age”:”20”};
+
+
+USAGE
+1. double salary; 		//declaration
+salary = 200000.5;		//initialization
+
+2. bool isLearningFlutter = true; 	//declaration and initialization at once
+
+3.  List<String> flutter_students = [“Ose”, “David”, “Mulan”];
+

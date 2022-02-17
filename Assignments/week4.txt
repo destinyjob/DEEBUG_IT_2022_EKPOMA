@@ -1,0 +1,47 @@
+>> ACTIVITY 6
+Write a program that asks a user for the following fields:
+name (String), dateOfBirth (int), salary (double), gender (String), occupation (String)
+and print the result such that
+
+if the input values are:
+Emmanuel
+2000
+3000000
+male
+Software developer
+
+the output would be:
+His name is Emmanuel and he is 22 years old. He is a Software developer that earns 3000000 naira weekly. 
+
+if the input values are:
+Rejoice
+2020
+45000
+female
+Cross platform mobile app developer
+
+the output would be:
+Her name is Rejoice and she is 2 years old. She is a female Cross platform mobile app developer that earns 45000 naira weekly. 
+
+
+
+>> ACTIVITY 7
+Declare a variable flower and assign it the value rose.
+Declare a second variable tree and assign it the value apple.
+Then, think of a way to swap the values of flower and apple, such that when you print flower, apple is displayed and when you print tree, rose is displayed.
+
+
+
+>> ACTIVITY 8
+Write a Dart program to display the current date and time in this format:
+Time 06:03 P.M
+Date 14:02:2022
+
+(IF IT IS MORNING, IT SHOULD SHOW A.M, IF EVENING/NIGHT, IT SHOULD SHOW P.M)
+
+_________________________________________
+NB.
+1. The name of the file should match the name of the activity you are answering
+2. Ensure you comment each question in the particular file you will be answering it's corresponding activity
+
+If you have any questions, please ask. But digest the assignment properly before asking.

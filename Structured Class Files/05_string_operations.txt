@@ -1,0 +1,23 @@
+//AUTHOR: Deebug Institute
+
+STRING OPERATIONS
+
+Concatenate using the “+” operator.
+Interpolate using the “$” operator.
+When you concatenate two or more Strings, you are basically joining the Strings together. Strings are traditionally concatenated using the "+" operator. Consider the following;
+String concatString = ‘Dart ‘ + ‘is ‘ + ‘fun!’; //‘Dart is fun!’
+
+You can use ${} to interpolate the value of Dart expressions within Strings. The curly braces can be omitted when evaluating variable identifiers;
+
+
+void main(){
+  	String my_string = 'Deebug';
+  	String sentence = "$my_string has ${my_string.length} LeTtERs";
+
+  	print(sentence);						//Deebug has 6 LeTtERs
+  	print(sentence.toLowerCase()); 			//deebug has 6 letters
+  	print(sentence.toUpperCase());			 //DEEBUG HAS 6 LETTERS
+  	print(sentence.substring(7)); 			//has 6 LeTtERs
+  	print(sentence.substring(7, 12));			 //has 6
+  	print(sentence.split(" ")); 				//[Deebug, has, 6, LeTtERs]
+}

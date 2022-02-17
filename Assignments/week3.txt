@@ -1,5 +1,4 @@
-  /*
-  WEEK 2 ASSESSMENT
+WEEK 2 ASSESSMENT
 
 >> Activity 1
 Write a program to check if the value of a variable is an even number or not
@@ -28,12 +27,10 @@ Answer the question (i) using ternary operator for your conditional statement.
 
 
 >> Activity 5
-Write a program that collects user input and check if the users input is positive or negative
+Write a program that collects user input and check if the users input is positive or a negative number
 
+_________________________________________
 NOTE: Push the entire project folder containing the files you answered each activity to your Github repository and add me to the project as a collaborator.
-
 My Github username: destinyjob
 
 If you have any questions, please ask. But digest the assignment properly before asking.
-
-   */

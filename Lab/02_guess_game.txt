@@ -1,0 +1,12 @@
+Now let us make the guess game program a little bit more interesting 😁️.
+
+If you have completed Activity 13, you must have realized that you need to hardcode your guess number into the source code anytime you want to make a guess
+and that the program exits whether or not the guess was correct.
+
+And also, because everytime the program runs, a new random number is generated every point in time, it makes it impossible to guess the previous random number the next 
+time you re-run the program.
+
+We believe you are the best person for the job😁️, and we want you to make an update to our game. Such that:
+1. The user does not have to fiddle with the souce code to make a guess.
+2. Once our program runs, we don't want it to stop till the random number has been guessed correctly.
+3. We would love to know the number of attempts a user made before he guessed the correct random number that was generated.

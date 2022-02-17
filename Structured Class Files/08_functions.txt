@@ -1,0 +1,137 @@
+FUNCTIONS are used to group reusable logic/code that accomplish a specific task. A function can optionally take parameters and return values. All functions return a value by default, and if no return statement is specified, Dart automatically appends to the function body the return null statement, which is implicitly added for you.
+Most programming languages provide built in functions; these are functions which have already been defined by the creators of the programming language to carry out specific tasks. These functions usually carry out commonly needed operations, which would normally require several steps/lines of code to accomplish. It is good practice to have a good knowledge of as many of the built in functions as possible available to you in dart. This will invariably save you a lot of time. For instance, computing the square root of a number.
+In general, we as programmers don’t really care about how the function for finding the square root of a number does what it does, only that it “does it”.
+
+import 'dart:math';
+void main(){
+    print(Random().nextInt(100));
+    print(pi);
+    print(sqrt(96));
+    print(pow(2,4));
+
+    print(DateTime.now());
+}
+
+
+import 'dart:math' as math;
+void main(){
+    print(math.Random().nextInt(100));
+    print(math.pi);
+    print(math.sqrt(96));
+    print(math.pow(2,4));
+  
+    print(DateTime.now());
+}
+
+You can also create functions according to your needs and that function will be called a User-defined functions.
+
+
+ANATOMY OF A DART FUNCTION
+return_type  function_name(parameterList){
+	// function body
+}
+
+** FUNCTIONS DEFINE PARAMETERS & RECEIVES ARGUMENTS
+
+Let us look into a simple function in Dart as shown here:
+
+Example:
+void main() {
+	add(3,4);
+}
+
+void add(int a,int b) {
+	int c;
+	c=a+b;
+	print(c);
+}
+
+The return_type can be any valid data type. The data type of the value returned must match the return type of the function.
+
+Dart also supports a nice shorthand syntax for any function that has only one expression. In other words, is the code inside the function block only one line? Then it’s probably one expression, and you can use this syntax to be concise:
+
+void greet(String name) => print('Hello, $name');
+
+
+Importance of writing a function:
+1. They make our code manageable.
+2. One of the best things about function is that they allow you as a programmer reuse code, instead of rewriting it from scratch. It reduces duplication/replication of code.
+3. Another great thing about function is that functions allow us keep our variable namespace clean. What this means is that local variables only “live” as long as the function does. Therefore, function_a can have and use a variable called my_variable, and function_b can also use a variable called my_variable and there will be no confusion because each variable my_variable only exists when the computer is in the process of executing that specific function.
+4. Functions also allow us to do isolated testing of certain aspects of our program.
+
+
+Function Control Flow
+When a function gets “called”, the program “leaves” (moves) from the current section/block of code and begins to execute the first line of code within the function which was called.
+
+
+EXAMPLE
+void main(){
+   print("Welcome to my program");
+   print("Now, lets pass some arguments to our 'aeroplane' function\n");
+   aeroplane("Mira", "Light", "Endurance\n");
+   print("End of our program");
+}
+
+void aeroplane(String seat1, String seat2, String seat3){
+   print("Seat 1 has been occupied by $seat1");
+   print("Seat 2 has been occupied by $seat2");
+   print("Seat 3 has been occupied by $seat3");
+}
+
+
+
+EXAMPLE
+void main(){
+	helloFunction();
+
+	additionFunction(5, 6);
+	
+//CALLING "subtractNumbers" FUNCTION HERE WHICH RETURNS A VALUE THAT WILL BE USED FURTHER IN OUR PROGRAM
+  int answer = subtractNumbers(5, 6);
+  print(answer * 2);
+
+	String returnedAnswer = 'The answer is ${subtractNumbers(3, 4)}';
+	print(returnedAnswer);
+	
+	print(getPI() * 3);
+	
+  userProfile("Daniel", 50, 100000, false);
+  userProfile("Harmony", 900, 2000000, true);
+}
+
+
+// This function does not receive a value and does not return a value
+void helloFunction(){
+	print("Hello Everyone");
+}
+
+
+// This function receives values but does not return a value
+void additionFunction(int fNum, int sNum){
+	print(fNum + sNum);
+}
+
+// A FUNCTION TO SUBTRACT TWO NUMBERS: function receives values and returns a value of type int
+int subtractNumbers(int first, int second){
+  // int answer = first-second;
+  // return answer;
+  return first-second;
+}
+
+// This function does not receive a value but it returns a value of type double
+double getPI() => 3.142;
+// double getPI(){
+// 	return 3.142;
+// }
+
+
+// A FUNCTION TO DISPLAY BRIEF INFO OF A USER
+void userProfile(String name, int age, double salary, bool isFemale){
+  String title;
+  if(isFemale == true){
+    title = "Mrs";
+  }else{
+    title = "Mr";
+  }
+  print("$title $name, a $age year old programmer earns \$$salary salary every month");
+}

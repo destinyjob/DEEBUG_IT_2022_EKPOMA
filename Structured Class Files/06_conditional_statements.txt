@@ -1,0 +1,73 @@
+//AUTHOR: Deebug Institute
+
+Conditional statements: if, if-else, else if, else, ternary operators, switch case
+
+
+if(condition){
+	// statement(s) will execute if the condition evaluates to true.
+}
+
+EXAMPLE
+void main(){
+	int first = 90;
+	int second = 78;
+	if(first>second){
+		print("$first is greater");
+	}
+	print(“Outside of the block of code”);
+}
+
+
+
+
+IF ELSE
+if(condition){
+	// this block will execute if the condition evaluates to true.
+}else{
+	// this block will execute if the “if statement” condition evaluates to false
+}
+
+EXAMPLE
+void main(){
+	int score = 45;
+	int benchmark = 45;
+	if(score>=benchmark){
+		print("You passed");
+	}else{
+		print(“Do better next time”);
+	}
+}
+
+
+TERNARY OPERATOR
+condition ? expression1 : expression2
+
+expression1 runs if condition is true, while expression2 runs if condition is false
+
+EXAMPLE 
+void main(){
+    String country = "UAE";
+    country == "Nigeria" ? print("Patriotic citizen!") : print("Unpatriotic!");
+}
+
+
+
+SWITCH CASE
+The switch case statement has the following structure:
+
+switch(variable_expression){
+	case constant_expr1:
+		// statements;
+	break;
+	case constant_expr2:
+		// statements;
+	break;
+	default:
+		// statements;
+	break;
+}
+
+  /**The value of the variable name is tested against all cases in the switch.
+   * If the variable matches one of the cases, the corresponding code block is executed.
+   * If no case expression matches the value of the variable_expression,
+   * the code within the default block is executed. */

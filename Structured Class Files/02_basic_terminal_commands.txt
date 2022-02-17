@@ -1,0 +1,9 @@
+//AUTHOR: Deebug Institute
+
+TERMINAL COMMANDS
+ls: to list items in the current directory
+cd: change directory
+cd .. : to navigate to the previous directory
+cls (ctrl+l): to clear screen
+pwd: present working directory
+mkdir: make directory (for creating folders)

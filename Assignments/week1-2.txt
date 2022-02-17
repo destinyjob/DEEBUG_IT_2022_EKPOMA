@@ -1,0 +1,119 @@
+1. Research on the different Dart operators 
+
+2. Read the Null Safety.pdf file
+
+3. Carefully practise with the following code and run them
+(DO NOT COPY & PASTE, ELSE YOU WON'T ACTUALLY LEARN)
+
+//PRACTISE 1 (Assigning & printing variable)
+void main(){
+	course = “Dart programming”;
+	print(course);
+}
+
+
+//PRACTISE 2 (Operator Precedence)
+void main(){
+   double grade = 10-9/2*(10+12)/3*8;
+   print(grade);
+
+   double calculation = (8-(5*3))-(6+10)+(8/2);
+   print(calculation);
+}
+
+
+//PRACTISE 3	(Postfix and Prefix operators)
+void main(){
+  int salary; 	//declaring the variable
+  salary = 300000;	 //assigning value to the variable
+
+  int salary2 = 100000; 	//declaring and assigning once
+
+  print(++salary);
+  print(--salary);
+  // print(salary);
+
+  print("");
+  print(salary2++);
+  // print(salary2);
+  // print("");
+  
+  print(salary2--); 
+  // print(salary2);
+  print("");
+  
+  print(salary+salary2);
+}
+
+
+
+4. Create your github account and make your first push to your remote repository by following these steps:
+>> TO SETUP GIT AND PUSH A PROJECT FOR THE FIRST TIME
+
+Ensure you are on git version 2.28 and above
+
+If you enable readMeFile when creating the remote repo, you might have issues when pushing your project to that repo
+
+When you create a new remote project, it will by default be set to master as the default project branch whereas your remote repo might be set to main and this might cause issues.
+So to configure the initial branch name to use main in all of your new repositories, run in terminal
+>> git config --global init.defaultBranch main
+
+The global git username and email address are associated with commits on all repositories on your system
+So to set your Git username and email for every repository on your computer, run
+>> git config --global user.name "yourGithubUsername"
+>> git config --global user.email "yourGithubEmail"
+
+
+Then ensure you are in the directory of the project you want to push to your repo and run the following commands
+>> git init			//Create an empty Git repository or reinitialize an existing one. THIS WILL INITIALIZE THE CURRENT DIRECTORY AS A GIT REPO
+
+>> git status		// THIS WILL HELP YOU TO KNOW IF YOU ARE CURRENTLY TRACKING YOUR MAIN BRANCH OR ANOTHER BRANCH
+
+>> git add .			//stage all files or Adds all file contents to the index
+
+>> git commit -m "first commit to github"		//Record changes to the repository
+
+>> git remote add origin remoteRepoProjectLink
+
+>> git push -u origin main
+
+>> A DIALOG BOX SHOULD APPEAR
+(setup your access token if you haven't or it has expired)
+>> PERSONAL ACCESS TOKEN
+Login to your account
+Settings
+Developer Settings
+Personal Access token
+Generate token
+enable: repo (all options), workflow, write:packages, delete:packages
+Save your key somewhere
+Then use your key to login
+
+
+
+
+5. EXERCISE:
+Write a program that would ask for a students name, department, and cgpa & print your result like the following sample code output
+
+SAMPLE CODE 1:
+What is your name?
+>> John
+What department did you graduate from?
+>> Computer Engineering
+What was your CGPA?
+>> 4.2
+
+OUTPUT: Hello John, you graduated with 4.2 from the department of Computer Engineering.
+
+
+SAMPLE CODE 2:
+What is your name?
+>> Folashade
+What department did you graduate from?
+>> Mass Communication
+What was your CGPA?
+>> 3.5
+
+OUTPUT: Hello Folashade, you graduated with 3.5 from the department of Mass Communication.
+
+
