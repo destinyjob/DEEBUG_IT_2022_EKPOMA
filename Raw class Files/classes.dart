@@ -1,4 +1,6 @@
 //@dart = 2.11
+import 'dart:io';
+
 void main() {
   // OperationDeebug deebug = OperationDeebug();
 
@@ -14,8 +16,10 @@ void main() {
   // Person operations = Person();
 
   // String name = 'Destiny';
-  Person human = Person(21);
-  print(human.height);
+  // Person human = Person();
+  String branch = stdin.readLineSync().toString();
+  Person h2 = Person.namedConst(branch);
+  // Person h3 = Person.kelvin('I sleep too much');
 }
 
 class Person {
@@ -31,8 +35,26 @@ class Person {
   // }
 
   double height;
+  //This is as no-arg constructor
+  // Person() {print('Kelvin is dosing');}
 
-  Person(double height) {
-    this.height = height;
+  //This a parameterized constructor
+  // Person(String str, int age) {
+  //   print(str);
+  //   print(age);
+  // }
+
+  //Named constructor
+
+  Person() {
+    print('My name is Destiny');
+  }
+
+  Person.namedConst(String branch) {
+    print('I am in $branch');
+  }
+
+  Person.kelvin(String sleep) {
+    print(sleep);
   }
 }
