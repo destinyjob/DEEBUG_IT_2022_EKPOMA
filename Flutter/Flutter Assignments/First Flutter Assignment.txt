@@ -1,0 +1,9 @@
+1- Modify the current state of our project and add slight changes whereever you can.
+
+Note- Make sure to retype the code entirely, do not copy and paste for your own benefit.
+
+
+2- Learn and implement 10 new widgets before our class on monday..
+
+
+3- Attempt the Restaurant menu lab, feel free to do something basic...
