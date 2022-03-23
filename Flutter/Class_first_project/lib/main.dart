@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'barWidgets.dart';
 import 'tryout.dart';
+import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
-void main(){
+final getX = GetStorage();
+void main() async{
   //The runApp basically attaches your U.I to your screen
+  await GetStorage.init();
   runApp(FirstProject());
 }
 
@@ -13,6 +17,7 @@ void main(){
 // describing does not depend on anything other than the configuration information and
 // the BuildContext whereas a Stateful widget is useful when the part of the user interface you are describing can change dynamically.
 class FirstProject extends StatelessWidget{
+  const FirstProject({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context){
     return MaterialApp(

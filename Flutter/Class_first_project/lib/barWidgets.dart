@@ -1,8 +1,9 @@
-import 'dart:html';
-import 'dart:ui';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:seccond_project/main.dart';
+import 'package:seccond_project/statemanagementSolutionsRouting/navigate.dart';
 
 class barWidgets extends StatefulWidget{
   @override
@@ -11,6 +12,7 @@ class barWidgets extends StatefulWidget{
 
 class _barWidgetsState extends State<barWidgets> {
   bool initialVal  = true;
+  String returnData = 'waiting for Data';
   String name = '';
   @override
   build(BuildContext context){
@@ -56,55 +58,66 @@ class _barWidgetsState extends State<barWidgets> {
       ///The body is what basically take up the space between the app bar and the bottom nav bar if the bottom nav bar is present,
       ///if the bottom navbar is not present, the body takes up the entirety of the space beneath the appBar
       body: Container(
-        child: Column(
+        child: ListView(
           children: [
-            Checkbox(
-                value: initialVal,
-                onChanged: (val){
-                  setState(() {
-                    initialVal = val!;
-                  });
-                },
-            ),
-
-            SizedBox(height: 10),
-
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Image.network('https://jw-webmagazine.com/wp-content/uploads/2020/03/Kimetsu-no-YaibaDemon-Slayer.jpg'),
-            ),
-
-            SizedBox(height: 50),
-
-            Padding(
-              padding: EdgeInsets.only(left: 50, right: 50),
-              child: TextField(
-                onChanged: (value){
-                  name = value;
-                },
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  labelText: 'name',
+            Column(
+              children: [
+                Checkbox(
+                    value: initialVal,
+                    onChanged: (val){
+                      setState(() {
+                        initialVal = val!;
+                      });
+                    },
                 ),
-              ),
-            ),
-            SizedBox(height: 20),
-            Padding(
-              padding: EdgeInsets.only(left: 50, right: 50),
-              child: TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  labelText: 'password',
+
+                Text(returnData, style:
+                TextStyle(fontWeight: FontWeight.w300, fontSize: 30)),
+
+                SizedBox(height: 10),
+
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Image.network('https://jw-webmagazine.com/wp-content/uploads/2020/03/Kimetsu-no-YaibaDemon-Slayer.jpg'),
                 ),
-              ),
+
+                SizedBox(height: 50),
+
+                Padding(
+                  padding: EdgeInsets.only(left: 50, right: 50),
+                  child: TextField(
+                    onChanged: (value){
+                      name = value;
+                    },
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      labelText: 'name',
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20),
+                Padding(
+                  padding: EdgeInsets.only(left: 50, right: 50),
+                  child: Text('', style: TextStyle(fontWeight: FontWeight.w500, fontSize: 30),
+                  )
+                ),
+
+                SizedBox(height: 20),
+
+                MaterialButton(
+                  onPressed: (){
+                    // getX.write('username', name);
+                    getX.erase();///function for erasing everything in the storage
+                    Navigator.push(context, CupertinoPageRoute(builder: (context) => pageOne()));///This is how we move to another page
+                  },
+                  color: Colors.purple,
+                  child: Text('Save detail', style: TextStyle(color: Colors.white),),
+                ),
+
+              ],
             ),
-
-            SizedBox(height: 20),
-
           ],
         ),
       ),
@@ -120,14 +133,18 @@ class _barWidgetsState extends State<barWidgets> {
       ),
 
       ///Buttons in flutter allow us carry out specific actions and the floatingActionsButton is just one of the numerous buttons we have
-      floatingActionButton: FloatingActionButton(
-
-        child: Icon(Icons.arrow_right, size: 40),
-        onPressed: (){
-          print(name);
-        },
-      ),
-      floatingActionButtonLocation:FloatingActionButtonLocation.centerFloat,
+      // floatingActionButton: FloatingActionButton(
+      //
+      //   child: Icon(Icons.arrow_right, size: 40),
+      //   onPressed: () async{
+      //     final result = await Navigator.push(context,
+      //         CupertinoPageRoute(builder: (context) => pageOne(name: name)));
+      //     setState(() {
+      //       returnData = result;
+      //     });
+      //     },
+      // ),
+      // floatingActionButtonLocation:FloatingActionButtonLocation.centerFloat,
     );
   }
 }
