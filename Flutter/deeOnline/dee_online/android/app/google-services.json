@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "200067071132",
+    "project_id": "deeonline-aacbb",
+    "storage_bucket": "deeonline-aacbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200067071132:android:5252aca14f909768c28159",
+        "android_client_info": {
+          "package_name": "com.example.dee_online"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200067071132-otfb210sdvr1aknpc5gjpgsp3cc2so96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgikhuLHRfdhaF2UDzqcvDve5uoTENJKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200067071132-otfb210sdvr1aknpc5gjpgsp3cc2so96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
