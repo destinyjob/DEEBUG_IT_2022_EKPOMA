@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:state_management_with_getx/controller/countController.dart';
 import 'package:state_management_with_getx/controller/userController.dart';
+import 'package:state_management_with_getx/second.dart';
 void main(){
   runApp(MyApp());
 }
@@ -22,8 +23,8 @@ class MyApp extends StatelessWidget{
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              GetBuilder<CounterController>(builder: (_){
-                return Text('Current Count Value: ${_.count}');
+              GetBuilder<CounterController>(builder: (fav){
+                return Text('Current Count Value: ${fav.count}');
               }),
 
               SizedBox(height: 50),
@@ -67,11 +68,11 @@ class MyApp extends StatelessWidget{
 }
 
 
-class Second extends StatelessWidget{
-  @override
-  build(BuildContext context){
-    return Scaffold(
-      appBar: AppBar(),
-    );
-  }
-}
+// class Second extends StatelessWidget{
+//   @override
+//   build(BuildContext context){
+//     return Scaffold(
+//       appBar: AppBar(),
+//     );
+//   }
+// }
